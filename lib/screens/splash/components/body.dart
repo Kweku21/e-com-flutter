@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shop_app/components/default_button.dart';
 import 'package:shop_app/constants.dart';
+import 'package:shop_app/screens/sign_in/sign_in.dart';
 import 'package:shop_app/screens/splash/components/splash_content.dart';
 import 'package:shop_app/size_config.dart';
 
@@ -71,7 +72,9 @@ class _BodyState extends State<Body>{
 
                     DefualtButton(
                       text: "Continue",
-                      press: (){},
+                      press: (){
+                        Navigator.pushNamed(context, SignInScreen.routeName);
+                      },
                     ),
                     Spacer(),
                   ],
